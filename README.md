@@ -13,68 +13,113 @@ Objective: The primary goal of this project is to conduct a descriptive analysis
 # Dataset: 
 
 The dataset includes academic records for various programs and contains the following key attributes:
+
 •	StudentID – Unique identifier for each student
+
 •	CourseID – Course enrollment identifier
+
 •	FacultyID – Responsible faculty member for the course
+
 •	CompletionRate – Percentage of students completing the course
+
 •	CompletionDate – Date of course completion
+
 •	EnrollmentStatus – Indicates whether students enrolled, dropped, or completed
+
 •	ProgramName – Degree or diploma program
+
 •	GPA – Student performance metric
+
 •	PaymentMethod – Indicates tuition funding method
+
 •	RetentionStatus – Tracks continued engagement post-course
 
 # Methodology:
 
 1 – Data Collection and Preparation:
+
 •	Uploaded structured academic datasets to Amazon S3 for secure cloud storage.
+
 •	Used AWS Glue DataBrew and Excel to profile and clean datasets.
+
 •	Filled missing values with standardized placeholders (e.g., “NA”) and corrected data types.
+
 •	Created relationships between parks and facilities (in your earlier example) or between courses and student/faculty data.
+
 •	Identified and grouped data inconsistencies and standardized naming formats.
+
 •	Ensured classification of data sensitivity for future compliance (public, internal, confidential).
 
 2 – Descriptive Statistics:
+
 •	Calculated average course completion rate across programs (24% baseline).
+
 •	Evaluated course load and completion ratio by faculty and program.
+
 •	Measured transaction frequency (enrollment) by course, program, and retention status.
+
 •	Aggregated GPA and analyzed its correlation with course completion.
 
 3 – Data Visualization:
+
 •	Built bar charts showing average completion per program and faculty.
+
 •	Created pie charts to represent student retention vs. dropout trends.
+
 •	Designed line graphs to visualize time-based completion trends.
+
 •	Used matrix-style diagrams to correlate GPA with course outcomes.
 
 4 – Student Segmentation:
+
 •	Segmented students based on GPA and frequency of enrollment.
+
 •	Categorized students into high-performing, at-risk, and average-performance groups.
+
 •	Analyzed behavioral trends across segments to identify intervention opportunities.
 
 # Insights and Findings:
+
 •	Courses with low faculty-to-student ratios had significantly better completion rates.
+
 •	Completion dropped during summer sessions and increased during fall.
+
 •	Digital payment users showed slightly higher retention than those on cash-based plans.
+
 •	Students with high GPA (>3.5) were more likely to complete courses across multiple programs.
+
 •	Curriculum gaps and outdated content were common dropout triggers (as per fishbone diagram).
 
 # Recommendations:
+
 •	Redesign orientation for new students to increase early engagement.
+
 •	Balance teaching workloads to avoid burnout and improve course delivery.
+
 •	Update curricula in low-completion programs based on trend insights.
+
 •	Create targeted support plans for low-GPA or low-attendance segments.
+
 •	Implement real-time data dashboards for faculty to monitor student progress.
 
 
 # Tools and Technologies:
+
 •	Excel, Python (Pandas) – For data wrangling and descriptive stats
+
 •	AWS S3, AWS Glue DataBrew – For data storage, profiling, and transformation
+
 •	Power BI/Tableau – For building visual dashboards and communicating insights
 
+
 # Deliverables:
+
 •	A cleaned and transformed dataset ready for reporting and deeper analysis
+
 •	Visual dashboards representing course performance, student segmentation, and faculty metrics
+
 •	A comprehensive report documenting methodology, findings, and strategic recommendations
+
 
 This project provides actionable insight into student behavior and academic performance, enabling educators and administrators to optimize course design, improve retention strategies, and ensure equitable learning experiences across academic programs.
 
